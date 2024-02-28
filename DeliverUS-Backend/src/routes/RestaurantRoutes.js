@@ -7,7 +7,7 @@ const loadFileRoutes = function (app) {
     .get(RestaurantController.index)
     .post(RestaurantController.create)
 
-  app.route('/restaurants/{restaurantId}')
+  app.route('/restaurants/:restaurantId')
     .get(RestaurantController.show)
     .put(RestaurantController.update)
     .delete(RestaurantController.destroy)
