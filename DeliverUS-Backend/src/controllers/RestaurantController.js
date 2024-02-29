@@ -20,7 +20,7 @@ const index = async function (req, res) {
   }
 }
 
-// TODO: Complete the following functions
+// TODO: Complete the following functions (completed)
 
 const create = async function (req, res) {
   const newRestaurant = Restaurant.build(req.body)
