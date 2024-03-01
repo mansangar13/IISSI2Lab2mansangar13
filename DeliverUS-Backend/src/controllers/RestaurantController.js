@@ -79,10 +79,11 @@ const destroy = async function (req, res) {
     let confirmacion
     if (deleteRestaurant === 0) {
       confirmacion = 'No se ha podido borrar el restaurante'
+      res.status(404).json(confirmacion)
     } else {
       confirmacion = 'Restaurante correctamente borrado'
+      res.json(confirmacion)
     }
-    res.json(confirmacion)
   } catch (err) {
     res.status(500).send(err)
   }
